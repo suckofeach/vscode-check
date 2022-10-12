@@ -3,8 +3,8 @@ import random
 user_score = 0
 comp_score = 0
 
-options = ['rock', 'paper', 'scissors', 'r', 'p', 's']
-#            0        1         2        3    4    5
+options = ['rock', 'paper', 'scissors', 'r', 'p', 's', '1', '2', '3']
+#            0        1         2        3    4    5    6    7    8
 
 
 while True:
@@ -25,7 +25,7 @@ while True:
 
 
     #rock
-    if user_input == options[0] or user_input == options[3]:
+    if user_input == options[0] or user_input == options[3] or user_input == options[6]:
         if comp_input == options[0]:
             print('pat')
         elif comp_input == options[2]:
@@ -36,7 +36,7 @@ while True:
             comp_score += 1
 
     #paper
-    if user_input == options[1] or user_input == options[4]:
+    if user_input == options[1] or user_input == options[4] or user_input == options[7]:
         if comp_input == options[1]:
             print('pat')
         elif comp_input == options[0]:
@@ -47,7 +47,7 @@ while True:
             comp_score += 1
 
     #scissors
-    if user_input == options[2] or user_input == options[5]:
+    if user_input == options[2] or user_input == options[5] or user_input == options[8]:
         if comp_input == options[2]:
             print('pat')
         elif comp_input == options[1]:
